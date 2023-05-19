@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="game.js" ></script>
+    <link rel="stylesheet" href="game.css" />
+    
+</head>
+
+<body>
+    <div id="SAT"><img src="img/satellite.gif"></div>
+    <div id="player"><img id="ufo" src="img/ufo-transparent1.png" /></div>
+    <div id="planet1"><img src="img/Saturn_planet.gif"></div>
+    <div id="planet2"><img src="img/planet_bounce.gif" ></div>
+    <div id="planet3"><img src="img/neptune_planet.gif"></div>
+    <div id="planet4"><img src="img/earth_planet.gif"></div>
+    <div id="planet5"><img src="img/DGPlanet.PNG"></div>
+    <div id="stats">
+        <h1>Planets Conquered: <span id="planetCount">0</span></h1>
+        <h1>Planets Destroyed: <span id ="planetDestroyed">0</span></h1>
+        <h3>Press spacebar to shoot</h3>
+        <p id="messages"></p>
+        
+    </div>
+    <div id="ELE"><img src="img/asteroid.gif" width="100px" height="100px"></div> 
+    <div id="ELE2"><img src="img/asteroid.gif" width="100px" height="100px"></div> 
+    <!--<embed name="Space" src="sound/space-sound-hi-109577.mp3" loop hidden autostart> -->
+        <audio src="sound/space-sound-hi-109577.mp3" autostart autoplay loop>	
+            <embed 
+                src="sound/space-sound-hi-109577.mp3"
+                loop="true"
+                autostart="true">
+        </audio>
+
+   <div id="win" >
+       <div>
+       <h1>WINNER WINNER</h1>
+       <h2>You conquered Earth!</h2>
+       <h3>STATS:</h3>
+       <p>Planets Conquered: <span id = "planetCount">0</span></p>
+       <p>Planets Destroyed: <span id ="planetDestroyed">0</span></p>
+       <p>PRESS X TO RESTART</p>
+        </div>
+    </div>
+    <div id= "lose" > 
+        <h1>GAME OVER</h1>
+        <h2>You have been destroyed!</h2>
+        <h3>PRESS X TO TRY AGAIN</h3>
+    </div>
+</body>
+</html>

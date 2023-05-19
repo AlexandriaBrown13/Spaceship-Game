@@ -1,0 +1,262 @@
+body{
+    width:50vw;
+    height: 75vh;
+    background-color:black;
+    background-image: url("img/Stars_space.png");
+    overflow-y: hidden;
+    overflow-x: hidden;
+}  
+
+#player {
+    position: absolute;
+    width:150px;
+    height:110px;
+    left:0px;
+    top:0px;
+    z-index:100;
+}
+
+
+.laserDown {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.laserLeft {
+    transform: rotate(180deg);
+}
+
+.laserUp {
+    transform: rotate(-90deg);
+}
+
+#planet1, #planet2, #planet3, #planet4{
+    width:200px;
+    height:200px;
+    position: absolute;            
+    border-radius: 100px;
+    color:yellow;
+    text-align:center;
+}
+#planet1 {
+    top: 420px;
+    left:0px;
+    /* background-color: purple; */
+}
+#planet1 img {
+    width: 400px;
+    height: 400px;
+}
+#planet2{
+    top:50px;
+    left:450px;
+   /* background-color: blue;*/
+}
+#planet3{
+    top:400px;
+    left: 800px;
+   /* background-color: yellowgreen;*/
+}
+#planet4{
+    bottom:100px;
+    right: 100px;
+    
+}
+#planet4 img {
+    width: 400px;
+    height: 400px;
+}
+
+#planet5 {
+  position: absolute;
+  width: 400px;
+  right: 400px;
+  top: -70px;
+}
+
+#planet5 img {
+  width: 400px;
+}
+
+#ufo {
+    width:150px;
+}
+
+#SAT {
+position: absolute;
+border: 8px double rgb(104, 42, 42);
+border-radius: 100%;
+}
+
+#SAT img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  
+}
+
+#stats {
+    width:400px;
+    height:210px;
+    background-color:black;
+    position: fixed;
+    top:0px;
+    right:0px;
+    padding:10px;
+    
+}
+
+#win {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  background-color: black;
+  border: 10px solid red;
+  border-radius: 10%;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 10%;
+  padding: 100px;
+  z-index: 200;
+  visibility: hidden;
+}
+
+#lose {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  background-color: black;
+  border: 10px solid red;
+  border-radius: 10%;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 10%;
+  padding: 200px;
+  z-index: 200;
+  visibility: hidden;
+}
+
+#messages{
+    width:400px;
+    height:150px;
+    text-align:left;
+    color:white;
+    font-size:32px;
+}
+h1{
+    color:yellow;
+}
+
+h3 {
+  color: white;
+}
+
+ @-webkit-keyframes fly {
+    0% {
+      top: 25%;
+      left: 0%;
+    }
+    50% {
+      top: 0%;
+      left: 50%;
+    }
+    100% {
+      top: 50%;
+      left: 100%;
+    }
+  }
+  
+  @keyframes fly {
+    0% {
+      top: 25%;
+      left: 0%;
+    }
+    50% {
+      top: 0%;
+      left: 50%;
+    }
+    100% {
+      top: 50%;
+      left: 100%;
+    }
+  }
+  
+  #ELE {
+ 
+  position: absolute;
+    -webkit-animation: fly 5s linear 0s infinite;
+    z-index: 110;
+        
+  } 
+
+  @-webkit-keyframes bounce {
+    0% {
+      top: 0%;
+      left: 100%;
+    }
+    30% {
+      top: 100%;
+      left: 60%;
+    }
+    80% {
+      top: 0%;
+      left: 0%
+    }
+    100% {
+      top: 100%;
+      left: 30%;
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: 100%;
+      left: 0%;
+    }
+    30% {
+      top: 0%;
+      left: 30%;
+    }
+    80% {
+      top: 60%;
+      left: 100%;
+    }
+    100% {
+      top: 100%;
+      left: 60%;
+    }
+  }
+  
+  #ELE2 {
+ 
+  position: absolute;
+    -webkit-animation: bounce 5s alternate 0s infinite;
+    z-index: 110;
+  }
+
+  @keyframes move {
+    0% {
+      bottom: -150px;
+      right: 400px;
+      
+    }
+
+    100% {
+      bottom: 400px;
+      right: -150px;
+    }
+  }
+  
+  #SAT {
+ 
+  position: absolute;
+    animation: move 5s linear 0s infinite alternate;
+    z-index: 110;
+        
+  } 
